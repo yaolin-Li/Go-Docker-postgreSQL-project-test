@@ -2,7 +2,7 @@ package db
 
 import (
 	"context"
-	"github.com/Go-Docker-postgreSQL-project-test/simplebank/util"
+	"github.com/Go-Docker-postgreSQL-project-test/util"
 	"github.com/stretchr/testify/require"
 	"testing"
 	"time"

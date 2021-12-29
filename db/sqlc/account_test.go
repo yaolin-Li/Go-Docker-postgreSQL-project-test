@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Go-Docker-postgreSQL-project-test/simplebank/util"
+	"github.com/Go-Docker-postgreSQL-project-test/util"
 	"github.com/stretchr/testify/require"
 )
 

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net/http"
 
-	db "github.com/Go-Docker-postgreSQL-project-test/simplebank/db/sqlc"
+	db "github.com/Go-Docker-postgreSQL-project-test/db/sqlc"
 	"github.com/gin-gonic/gin"
 )
 

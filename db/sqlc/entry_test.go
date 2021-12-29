@@ -2,13 +2,14 @@ package db
 
 import (
 	"context"
-	"github.com/Go-Docker-postgreSQL-project-test/simplebank/util"
-	"github.com/stretchr/testify/require"
 	"testing"
 	"time"
+
+	"github.com/Go-Docker-postgreSQL-project-test/util"
+	"github.com/stretchr/testify/require"
 )
 
-func createRandomEntry(t *testing.T, account Account) Entry{
+func createRandomEntry(t *testing.T, account Account) Entry {
 	arg := CreateEntryParams{
 		AccountID: account.ID,
 		Amount:    util.RandomMoney(),
@@ -42,7 +43,7 @@ func TestGetEntry(t *testing.T) {
 
 func TestListEntries(t *testing.T) {
 	account := createRandomAccount(t)
-	for i:= 0; i < 10; i++ {
+	for i := 0; i < 10; i++ {
 		createRandomEntry(t, account)
 	}
 
@@ -61,4 +62,3 @@ func TestListEntries(t *testing.T) {
 		require.Equal(t, arg.AccountID, entry.AccountID)
 	}
 }
-
